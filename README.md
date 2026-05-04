@@ -29,3 +29,26 @@ Instead of manually creating resources in AWS Console, everything is defined in 
 ---
 
 ## 🏗️ Architecture
+terraform-first-project/
+│
+├── main.tf # Main Terraform configuration
+├── terraform.tfvars # Input variables
+├── .terraform/ # Auto-generated working directory
+├── .terraform.lock.hcl # Provider lock file
+
+
+---
+
+## ⚙️ How It Works
+
+### 1️⃣ Initialize Terraform
+Downloads AWS provider plugins
+
+```bash
+terraform init
+
+terraform plan
+
+terraform apply
+
+terraform destroy
